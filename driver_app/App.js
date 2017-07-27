@@ -41,7 +41,7 @@ export default class grabDriver extends Component {
 
     this.pusher = new Pusher('YOUR PUSHER APP ID', {
       authEndpoint: 'YOUR AUTH SERVER ENDPOINT',
-      cluster: 'ap1',
+      cluster: 'YOUR PUSHER CLUSTER',
       encrypted: true
     });
 

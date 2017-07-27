@@ -9,7 +9,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 var pusher = new Pusher({ 
   appId: process.env.APP_ID, 
   key: process.env.APP_KEY, 
-  secret:  process.env.APP_SECRET 
+  secret:  process.env.APP_SECRET,
+  cluster: process.env.APP_CLUSTER,
 });
 
 app.get('/', function(req, res){
